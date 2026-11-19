@@ -13,8 +13,21 @@ public class Europe {
             new PaysEU("Espagne", "Madrid", 49590099, 505983, 1986),
             new PaysEU("Estonie", "Tallinn", 1360745, 45336, 2004),
             new PaysEU("Finlande", "Helsinki", 5652881, 338363, 1995),
-            new PaysEU("Grèce", "Athènes", 10366586, 131694 , 1981),
-
+            new PaysEU("Grèce", "Athènes", 10366586, 131694, 1981),
+            new PaysEU("Hongrie", "Budapest", 9488428, 93012, 2004),
+            new PaysEU("Irlande", "Dublin", 5510565, 69947, 1973),
+            new PaysEU("Italie", "Rome", 58942828, 302073, 1958),
+            new PaysEU("Malte", "La Valette", 588254, 316, 2004),
+            new PaysEU("Pays-Bas", "Amsterdam", 18130208, 37391, 1958),
+            new PaysEU("Pologne", "Varsovie", 36332765, 311928, 2004),
+            new PaysEU("Portugal", "Lisbonne", 11424031, 92226, 1986),
+            new PaysEU("Roumanie", "Bucarest", 19041322, 238398, 2007),
+            new PaysEU("Slovaquie", "Bratislava", 5409407, 49035, 2004),
+            new PaysEU("Suède", "Stockholm", 10605529, 447424, 1995),
+            new PaysEU("Tchéquie", "Prague", 10915839, 78871, 2004),
+            new PaysEU("Lettonie", "Riga", 1845096, 64594, 2004),
+            new PaysEU("Lituanie", "Vilnius ", 2887592, 65284, 2004),
+            new PaysEU("Luxembourg", "Luxembourg", 690959, 2595, 1958),
     };
 
     /**
