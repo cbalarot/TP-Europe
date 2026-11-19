@@ -1,7 +1,5 @@
 package fr.btsciel;
 
-import java.util.Date;
-
 public class Europe {
     private static final PaysEU[] PAYS = {
             new PaysEU("Allemagne", "Berlin", 83467117, 357569, 1958),
