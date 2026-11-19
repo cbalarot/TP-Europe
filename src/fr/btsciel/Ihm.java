@@ -62,15 +62,15 @@ public class Ihm {
     }
 
     static void showTab(PaysEU[] tab) {
-        System.out.println("+----------------------".repeat(5) + "+");
+        System.out.println("+----------------------".repeat(6) + "+");
         System.out.println("|  Nom du pays         |  Nom de la capitale  |  Nombre d'habitants  |  Superficie      " +
-                "    |  Densité             |");
-        System.out.println("+----------------------".repeat(5) + "+");
+                "    |  Densité             |  Année d'adhésion    |");
+        System.out.println("+----------------------".repeat(6) + "+");
         for (PaysEU pays : tab) {
-            System.out.printf("|  %-20s|  %-20s|  %-20d|  %-20s|  %-20s|\n", pays.getName(),
+            System.out.printf("|  %-20s|  %-20s|  %-20d|  %-20s|  %-20s|  %-20s|\n", pays.getName(),
                     pays.getCapital(),
-                    pays.getHabitant(), pays.getSuperficie() + " km²", pays.getDensite() + " hab/km²");
-            System.out.println("+----------------------".repeat(5) + "+");
+                    pays.getHabitant(), pays.getSuperficie() + " km²", pays.getDensite() + " hab/km²", pays.getAdhesionYear());
+            System.out.println("+----------------------".repeat(6) + "+");
         }
     }
 }
