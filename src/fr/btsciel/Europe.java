@@ -4,10 +4,16 @@ public class Europe {
     private static final PaysEU[] PAYS = {
             new PaysEU("Allemagne", "Berlin", 83467117, 357569, 1958),
             new PaysEU("France", "Paris", 69112309, 638475, 1958),
-            new PaysEU("Autriche", "Vienne",  9215956, 83882, 1995),
+            new PaysEU("Autriche", "Vienne", 9215956, 83882, 1995),
             new PaysEU("Belgique", "Bruxelles", 11955308, 30667, 1958),
             new PaysEU("Bulgarie", "Sofia", 6423207, 110996, 2007),
             new PaysEU("Chypre", "Nicosie", 996571, 9253, 1958),
+            new PaysEU("Croatie", "Zagreb", 3876002, 56594, 2013),
+            new PaysEU("Danemark", "Copenhague", 6025603, 42925, 1973),
+            new PaysEU("Espagne", "Madrid", 49590099, 505983, 1986),
+            new PaysEU("Estonie", "Tallinn", 1360745, 45336, 2004),
+            new PaysEU("Finlande", "Helsinki", 5652881, 338363, 1995),
+            new PaysEU("Grèce", "Athènes", 10366586, 131694 , 1981),
 
     };
 
