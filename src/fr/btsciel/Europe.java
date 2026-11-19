@@ -111,11 +111,11 @@ public class Europe {
     }
 
     public static PaysEU getMostPeupledPays() {
-        return getPaysSortHabitant()[0];
+        return getPaysSortHabitant()[PAYS.length - 1];
     }
 
     public static PaysEU getMostSuperficialPays() {
-        return getPaysSortSuperficie()[0];
+        return getPaysSortSuperficie()[PAYS.length - 1];
     }
 
     public static int getTotalSuperficie() {
