@@ -53,7 +53,7 @@ public class Ihm {
                 System.out.println("Le nombre d'habitants de l'Union Européenne est de " + Europe.getTotalHabitant() + " habitants.");
                 break;
             case 10:
-                System.out.println("Le nombre d'habitants au mètre carré de l'Union Européenne est de " + Europe.getTotalHabitant() / Europe.getTotalSuperficie() + " habitants/km².");
+                System.out.println("Le nombre d'habitants au mètre carré de l'Union Européenne est de " + Europe.getGlobalDensity() + " habitants/km².");
                 break;
             case 11:
                 showTab(Europe.getPaysSortYears());
