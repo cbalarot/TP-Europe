@@ -3,7 +3,12 @@ package fr.btsciel;
 public class Europe {
     private static final PaysEU[] PAYS = {
             new PaysEU("Allemagne", "Berlin", 83467117, 357569, 1958),
-            new PaysEU("France", "Paris", 69112309, 638475, 1958)
+            new PaysEU("France", "Paris", 69112309, 638475, 1958),
+            new PaysEU("Autriche", "Vienne",  9215956, 83882, 1995),
+            new PaysEU("Belgique", "Bruxelles", 11955308, 30667, 1958),
+            new PaysEU("Bulgarie", "Sofia", 6423207, 110996, 2007),
+            new PaysEU("Chypre", "Nicosie", 996571, 9253, 1958),
+
     };
 
     /**
