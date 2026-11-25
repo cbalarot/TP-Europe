@@ -48,9 +48,8 @@ public class Europe {
      * @return un tableau de pays de l'Europe triés selon leur nom alphabétique
      */
     public static PaysEU[] getPaysSortName() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getName().compareTo(PAYS[j].getName()) > 0) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -58,7 +57,7 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 
     /**
@@ -67,9 +66,8 @@ public class Europe {
      * @return un tableau de pays de l'Europe triés selon leur capitale alphabétique
      */
     public static PaysEU[] getPaysSortCapital() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getCapital().compareTo(PAYS[j].getCapital()) > 0) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -77,7 +75,7 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 
     /**
@@ -86,9 +84,8 @@ public class Europe {
      * @return un tableau de pays de l'Europe triés selon leur nombre d'habitants croissant
      */
     public static PaysEU[] getPaysSortHabitant() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getHabitant() > PAYS[j].getHabitant()) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -96,7 +93,7 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 
     /**
@@ -105,9 +102,8 @@ public class Europe {
      * @return un tableau de pays de l'Europe triés selon leur superficie croissante
      */
     public static PaysEU[] getPaysSortSuperficie() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getSuperficie() > PAYS[j].getSuperficie()) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -115,7 +111,7 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 
     /**
@@ -124,9 +120,8 @@ public class Europe {
      * @return un tableau de pays de l'Europe triés selon leur densité croissante
      */
     public static PaysEU[] getPaysSortDensite() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getDensite() > PAYS[j].getDensite()) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -134,7 +129,7 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 
     /**
@@ -196,9 +191,8 @@ public class Europe {
      * @return les pays de l'Europe triés par année d'adhésion
      */
     public static PaysEU[] getPaysSortYears() {
-        PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
-            for (int j = i + 1; j < PAYS.length; j++) {
+            for (int j = i + 1; j < PAYS.length - i; j++) {
                 if (PAYS[i].getAdhesionYear() > PAYS[j].getAdhesionYear()) {
                     PaysEU tempPays = PAYS[i];
                     PAYS[i] = PAYS[j];
@@ -206,6 +200,6 @@ public class Europe {
                 }
             }
         }
-        return temp;
+        return PAYS;
     }
 }
