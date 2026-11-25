@@ -1,5 +1,8 @@
 package fr.btsciel;
 
+/**
+ * Classe représentant l'ensemble des pays de l'Union Européenne.
+ */
 public class Europe {
     private static final PaysEU[] PAYS = {
             new PaysEU("Allemagne", "Berlin", 83467117, 357569, 1958),
@@ -31,14 +34,18 @@ public class Europe {
     };
 
     /**
-     * @return PaysEU[] renvoie la liste des pays de l'Europe
+     * Renvoie la liste des pays de l'Europe.
+     *
+     * @return un tableau de pays de l'Europe
      */
     public static PaysEU[] getPays() {
         return PAYS;
     }
 
     /**
-     * @return PaysEU[] renvoie la liste des pays de l'Europe triés par ordre alphabétique
+     * Renvoie la liste des pays de l'Europe triée par ordre alphabétique.
+     *
+     * @return un tableau de pays de l'Europe triés selon leur nom alphabétique
      */
     public static PaysEU[] getPaysSortName() {
         PaysEU[] temp = PAYS;
@@ -54,6 +61,11 @@ public class Europe {
         return temp;
     }
 
+    /**
+     * Renvoie la liste des pays de l'Europe triée par ordre alphabétique des capitales.
+     *
+     * @return un tableau de pays de l'Europe triés selon leur capitale alphabétique
+     */
     public static PaysEU[] getPaysSortCapital() {
         PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
@@ -68,6 +80,11 @@ public class Europe {
         return temp;
     }
 
+    /**
+     * Renvoie la liste des pays de l'Europe triée par ordre croissant du nombre d'habitants.
+     *
+     * @return un tableau de pays de l'Europe triés selon leur nombre d'habitants croissant
+     */
     public static PaysEU[] getPaysSortHabitant() {
         PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
@@ -82,6 +99,11 @@ public class Europe {
         return temp;
     }
 
+    /**
+     * Renvoie la liste des pays de l'Europe triée par ordre croissant de superficie.
+     *
+     * @return un tableau de pays de l'Europe triés selon leur superficie croissante
+     */
     public static PaysEU[] getPaysSortSuperficie() {
         PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
@@ -96,6 +118,11 @@ public class Europe {
         return temp;
     }
 
+    /**
+     * Renvoie la liste des pays de l'Europe triée par ordre croissant de densité.
+     *
+     * @return un tableau de pays de l'Europe triés selon leur densité croissante
+     */
     public static PaysEU[] getPaysSortDensite() {
         PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {
@@ -110,14 +137,29 @@ public class Europe {
         return temp;
     }
 
+    /**
+     * Renvoie le pays de l'Europe le plus peuplé.
+     *
+     * @return le pays de l'Europe le plus peuplé
+     */
     public static PaysEU getMostPeupledPays() {
         return getPaysSortHabitant()[PAYS.length - 1];
     }
 
+    /**
+     * Renvoie le pays de l'Europe le plus large.
+     *
+     * @return le pays de l'Europe le plus large
+     */
     public static PaysEU getMostSuperficialPays() {
         return getPaysSortSuperficie()[PAYS.length - 1];
     }
 
+    /**
+     * Renvoie la superficie totale de l'Europe.
+     *
+     * @return la superficie totale de l'Europe
+     */
     public static int getTotalSuperficie() {
         int total = 0;
         for (PaysEU pays : PAYS) {
@@ -126,6 +168,11 @@ public class Europe {
         return total;
     }
 
+    /**
+     * Renvoie le nombre total d'habitants de l'Europe.
+     *
+     * @return le nombre total d'habitants de l'Europe
+     */
     public static int getTotalHabitant() {
         int total = 0;
         for (PaysEU pays : PAYS) {
@@ -134,10 +181,20 @@ public class Europe {
         return total;
     }
 
+    /**
+     * Renvoie la densité moyenne de l'Europe.
+     *
+     * @return la densité moyenne de l'Europe
+     */
     public static int getGlobalDensity() {
         return getTotalHabitant() / getTotalSuperficie();
     }
 
+    /**
+     * Renvoie les pays de l'Europe triés par année d'adhésion.
+     *
+     * @return les pays de l'Europe triés par année d'adhésion
+     */
     public static PaysEU[] getPaysSortYears() {
         PaysEU[] temp = PAYS;
         for (int i = 0; i < PAYS.length; i++) {

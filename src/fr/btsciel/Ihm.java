@@ -61,6 +61,11 @@ public class Ihm {
         }
     }
 
+    /**
+     * Affiche un tableau de pays.
+     *
+     * @param tab le tableau de pays à afficher
+     */
     static void showTab(PaysEU[] tab) {
         System.out.println("+----------------------".repeat(6) + "+");
         System.out.println("|  Nom du pays         |  Nom de la capitale  |  Nombre d'habitants  |  Superficie      " +
