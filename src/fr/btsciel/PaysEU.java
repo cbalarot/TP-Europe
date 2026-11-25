@@ -125,4 +125,14 @@ public class PaysEU {
     public void setAdhesionYear(int adhesionYear) {
         this.adhesionYear = adhesionYear;
     }
+
+    /**
+     * Renvoie une représentation textuelle du pays correspondant à son nom.
+     *
+     * @return le nom du pays
+     */
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
