@@ -2,6 +2,9 @@ package fr.btsciel;
 
 import fr.btsciel.clavier.In;
 
+/**
+ * Classe d'interface utilisateur pour l'application.
+ */
 public class Ihm {
     static void main(String[] args) {
         final String[] MENU = {

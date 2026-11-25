@@ -1,5 +1,8 @@
 package fr.btsciel;
 
+/**
+ * Classe représentant un pays de l'Union européenne.
+ */
 public class PaysEU {
     private String name;
     private String capitale;
