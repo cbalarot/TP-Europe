@@ -42,12 +42,14 @@ public class Ihm {
                 showTab(Europe.getPaysSortDensite());
                 break;
             case 6:
-                PaysEU[] getMostPeupledPays = {Europe.getMostPeupledPays()};
-                showTab(getMostPeupledPays);
+                PaysEU getMostPeupledPays = Europe.getMostPeupledPays();
+                System.out.println("Le pays le plus peuplé est " + getMostPeupledPays.getName() + " avec " +
+                        "une population de " + getMostPeupledPays.getHabitant() + " habitants.");
                 break;
             case 7:
-                PaysEU[] mostSuperficialPays = {Europe.getMostSuperficialPays()};
-                showTab(mostSuperficialPays);
+                PaysEU mostSuperficialPays = Europe.getMostSuperficialPays();
+                System.out.println("Le pays avec le plus de superficie est " + mostSuperficialPays.getName() + " avec " +
+                        "une superficie de " + mostSuperficialPays.getSuperficie() + " km².");
                 break;
             case 8:
                 System.out.println("La superficie totale de l'Union Européenne est de " + Europe.getTotalSuperficie() + " km².");
